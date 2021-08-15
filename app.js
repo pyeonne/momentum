@@ -1,11 +1,17 @@
 'use strict';
 
 const player = {
-    name: 'nico',
-    points: 10,
-    fat: true,
+    name: 'nice',
+    sayHello: function (otherPersonName) {
+        console.log('hello!' + otherPersonName + 'nice to meet you');
+    },
 };
-console.log(player);
-player.lastName = 'potato';
-player.points = player.points + 15; // 10 + 15
-console.log(player);
+
+player.sayHello('lynn');
+player.sayHello('nico');
+
+function plus(a, b) {
+    console.log(a + b);
+}
+
+plus(5, 5);
