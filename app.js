@@ -1,17 +1,25 @@
 'use strict';
 
-const player = {
-    name: 'nice',
-    sayHello: function (otherPersonName) {
-        console.log('hello!' + otherPersonName + 'nice to meet you');
+const calculator = {
+    add: function (a, b) {
+        console.log(a + b);
+    },
+    minus: function (a, b) {
+        console.log(a - b);
+    },
+    divide: function (a, b) {
+        console.log(a / b);
+    },
+    multiple: function (a, b) {
+        console.log(a * b);
+    },
+    powerOf: function (a, b) {
+        console.log(a ** b);
     },
 };
 
-player.sayHello('lynn');
-player.sayHello('nico');
-
-function plus(a, b) {
-    console.log(a + b);
-}
-
-plus(5, 5);
+calculator.add(2, 5);
+calculator.minus(2, 5);
+calculator.divide(2, 5);
+calculator.multiple(2, 5);
+calculator.powerOf(2, 5);
