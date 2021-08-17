@@ -8,9 +8,10 @@
         <script src="app.js" defer></script>
     </head>
     <body>
-        <div id="login-form">
-            <input type="text" placeholder="What is your name?" />
+        <form id="login-form">
+            <input required maxlength="15" type="text" placeholder="What is your name?" />
             <button>Log In</button>
-        </div>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
     </body>
 </html>
