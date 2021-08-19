@@ -10,30 +10,49 @@
         <script src="js/quotes.js" defer></script>
         <script src="js/background.js" defer></script>
         <script src="js/todo.js" defer></script>
+        <script src="js/weather.js" defer></script>
     </head>
     <body>
+        <!-- Weather -->
+        <div class="weather__container">
+            <div id="weather">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
         <!-- Clock -->
-        <h2 id="clock">00:00:00</h2>
+        <div class="section__container">
+            <h2 id="clock" class="section">00:00:00</h2>
+        </div>
 
         <!-- Login Form -->
-        <form class="hidden" id="login-form">
-            <input required maxlength="15" type="text" placeholder="What is your name?" />
-            <button>Log In</button>
-        </form>
+        <div class="section__container">
+            <form class="hidden section" id="login-form">
+                <input required maxlength="15" type="text" placeholder="What is your name?" />
+                <button>Log In</button>
+            </form>
+        </div>
 
         <!-- Greeting -->
-        <h1 class="hidden" id="greeting"></h1>
+        <div class="section__container">
+            <h1 class="hidden section" id="greeting"></h1>
+        </div>
 
         <!-- To Do List -->
-        <form id="todo-form">
-            <input type="text" placeholder="Write a To Do and Press Enter" required />
-        </form>
-        <ul id="todo-list"></ul>
+        <div class="section__container">
+            <form id="todo-form" class="section">
+                <input type="text" placeholder="Write a To Do and Press Enter" required />
+            </form>
+            <ul id="todo-list" class="section"></ul>
+        </div>
 
         <!-- Quote -->
-        <div id="quote">
-            <span></span>
-            <span></span>
+        <div class="auote__container">
+            <div id="quote" class="section">
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </body>
 </html>
